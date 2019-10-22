@@ -8,6 +8,12 @@ h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
+button {
+  background-color: green;
+  padding: 1%;
+  font-size: 1.1em;
+  color: white;
+}
 
 /** NAVIGATION**/
 /* Add a black background color to the top navigation */
@@ -47,6 +53,12 @@ h1 {
  padding: 15px 20px;
  position: relative;
 }
+
+.nava:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5%;
+}
+
 .nava:after {
  background: none repeat scroll 0 0 transparent;
  bottom: 0;
@@ -58,6 +70,7 @@ h1 {
  background: #fff;
  transition: width 0.3s ease 0s, left 0.3s ease 0s;
  width: 0;
+
 }
 .nava:hover:after {
  width: 100%;
@@ -126,10 +139,35 @@ h1 {
 .section2 {
   width: 40%;
   float: right;
+  padding-bottom: 5%;
+  padding-top: 6%;
 }
 
 .section2img {
-  width: 60%;
+  width: 80%;
   padding-top: 5%;
   padding-left: 5%;
+}
+
+
+
+
+
+/* About us STARTS */
+.aboutContainer {
+  padding-left: 11%;
+}
+
+.aboutp {
+  width: 50%;
+}
+
+
+/*Scfholding Starts*/
+.scafContainer {
+  padding-left: 11%;
+}
+
+.scafp {
+  width: 50%;
 }
