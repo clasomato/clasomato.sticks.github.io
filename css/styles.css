@@ -114,6 +114,12 @@ button {
 	        animation: scale-in-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+@media screen and (max-width: 600px) {
+  .navlogo {
+    width: 90%;
+  }
+}
+
 /*Animation for navigation logo*/
 @-webkit-keyframes scale-in-center {
   0% {
@@ -157,6 +163,12 @@ button {
   width: 60%;
 }
 
+@media screen and (max-width: 600px) {
+  .section1 {
+    width: 90%;
+  }
+}
+
 .section1text {
   width: 80%;
   padding-top: 5%;
@@ -167,6 +179,15 @@ button {
   width: 60%;
 }
 
+@media screen and (max-width: 600px) {
+  .section1text {
+    width: 90%;
+    padding-left: 10%;
+  }
+  .section1p {
+    width: 95%;
+  }
+}
 
 .section2 {
   width: 40%;
@@ -182,6 +203,17 @@ button {
   -webkit-animation: scale-in-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: scale-in-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+@media screen and (max-width: 600px) {
+  .section2 {
+    width: 90%;
+  }
+  .section2img {
+    width: 80%;
+    float: none;
+  }
+}
+
 
 .contactBubble {
   background-color: #00ACFF;
@@ -267,6 +299,15 @@ button {
   width: 50%;
 }
 
+@media screen and (max-width: 600px) {
+  .aboutp {
+    width: 90%;
+  }
+  .aboutContainer {
+    padding-bottom: 1%;
+  }
+}
+
 .map {
   float: right;
   position: absolute;
@@ -282,6 +323,14 @@ button {
   width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .map {
+    float: none;
+    position: static;
+    width: 90%;
+    padding-left: 5%;
+  }
+}
 
 /*Scfholding Starts*/
 .scafContainer {
