@@ -6,10 +6,11 @@ body {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 button {
-  background-color: green;
+  background-color: #429e26;
   padding: 1%;
   font-size: 1.1em;
   color: white;
@@ -107,6 +108,37 @@ button {
     text-align: left;
   }
 }
+
+.navlogo {
+  -webkit-animation: scale-in-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/*Animation for navigation logo*/
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
 /**NAvigation ENDS**/
 
 
@@ -147,27 +179,195 @@ button {
   width: 80%;
   padding-top: 5%;
   padding-left: 5%;
+  -webkit-animation: scale-in-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-in-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-
-
+.contactBubble {
+  background-color: #00ACFF;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  padding: 0.2% 1% 0.2% 1%;
+  border-radius: 5em;
+  -webkit-animation: wobble-hor-bottom 0.8s 2s both;
+        animation: wobble-hor-bottom 0.8s 2s both;
+}
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
 
 
 /* About us STARTS */
 .aboutContainer {
   padding-left: 11%;
+  padding-bottom: 5%;
+  padding-top: 3%;
 }
 
 .aboutp {
   width: 50%;
 }
 
+.map {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 40.7%;
+  margin-right: 10%;
+  width: 30%;
+  height: 30%;
+}
+
+.aboutMap {
+  width: 100%;
+}
+
 
 /*Scfholding Starts*/
 .scafContainer {
   padding-left: 11%;
+  padding-bottom: 5%;
+  padding-top: 3%;
 }
 
 .scafp {
   width: 50%;
+}
+
+
+
+
+/*Contact Page*/
+.contactContainer {
+  padding-left: 11%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+
+/*Form CSS*/
+
+form {
+  width: 50%;
+}
+
+input[type=text] {
+  width: 60%;
+  padding: 1%;
+  font-size: 1.5em;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 70%;
+}
+
+legend {
+  font-size: 2em;
+  border: 0px;
+  color: black;
+  padding-bottom: 1%;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #429e26;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+
+/*CONTACT PAGE ENDS*/
+
+
+
+
+
+/*Footer*/
+.footer {
+  width: 100%;
+  background-color: #4a4a4a;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+.footerContent {
+  padding-left: 11%;
+  overflow: auto;
+}
+
+.footertext {
+  float: left;
+}
+
+.footerIcons {
+  float: right;
 }
