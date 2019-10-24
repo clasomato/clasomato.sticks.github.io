@@ -145,7 +145,8 @@ p {
 
 @media screen and (max-width: 600px) {
   .navlogo {
-    width: 90%;
+    width: 80%;
+    float: left;
   }
 }
 /**NAvigation ENDS**/
@@ -177,6 +178,7 @@ p {
   float: left;
 }
 
+
 .indexImages {
   width: 50%;
   float: right;
@@ -195,6 +197,25 @@ p {
   margin-top: -2%;
   padding-bottom: 4%;
 }
+
+/*Mobile Optimization*/
+@media screen and (max-width: 600px) {
+  .indexText {
+    width: 100%;
+    float: none;
+  }
+
+  .indexImages {
+    width: 90%;
+    float: none;
+  }
+
+  .indexImg {
+    width: 100%;
+  }
+}
+
+
 /*Index ENDS*/
 
 
@@ -213,6 +234,14 @@ p {
   -webkit-animation: wobble-hor-bottom 0.8s 2s both;
         animation: wobble-hor-bottom 0.8s 2s both;
 }
+
+/*Mobile Optimization*/
+@media screen and (max-width: 600px) {
+  .contactBubble{
+      padding: 0.1% 2% 0.1% 2%;
+  }
+}
+
 /*Contact Bubble ENDS*/
 
 
@@ -283,7 +312,18 @@ p {
 .scafp {
   width: 50%;
 }
-/*SCaffholding ENDS*/
+
+/*Mobile Optimization*/
+@media screen and (max-width: 600px) {
+  .scafp {
+    width: 90%;
+  }
+  .scafImg {
+    width: 90%;
+  }
+}
+
+/*Scaffholding ENDS*/
 
 
 
@@ -331,6 +371,18 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
   border-radius: 5%;
 }
+
+/*Mobile Optimization*/
+@media screen and (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+  textarea {
+    column-count: 10;
+    width: 90%;
+  }
+}
+
 /*CONTACT PAGE ENDS*/
 
 
