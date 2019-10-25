@@ -296,6 +296,8 @@ p {
     position: static;
     width: 90%;
     padding-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
   }
 }
 /*About us ENDS*/
@@ -334,6 +336,11 @@ p {
   padding-top: 3%;
   padding-bottom: 5%;
 }
+
+.contactHeader {
+  line-height: 0.7em;
+}
+
 
 
 /*Form CSS*/
@@ -394,7 +401,7 @@ input[type=button], input[type=submit], input[type=reset] {
 .footer {
   width: 100%;
   background-color: #4a4a4a;
-  color: white;
+  color: #d3d3d3;
   padding-top: 3%;
   padding-bottom: 2%;
 }
@@ -406,15 +413,43 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .footertext {
   float: left;
-  color: white;
+  color: #d3d3d3;
 }
 
 .footerIcons {
   float: right;
 }
+
+.footerNav {
+  padding-top: 1%;
+  margin-left: 15%;
+  width: 40%;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.navFooter {
+  float: left;
+  text-decoration: none;
+  color: white;
+  animation: icon_after 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.navFooter:hover {
+  animation: icon 0.2s;
+animation-fill-mode: forwards;
+}
 /*Footer ENDS*/
 
-
+@keyframes icon {
+  0% {color:#d3d3d3;}
+  100% {color:white;}
+}
+@keyframes icon_after {
+  0% {color:white;}
+  100% {color:#d3d3d3;}
+}
 
 
 /*ANIMATIONS START HERE*/
