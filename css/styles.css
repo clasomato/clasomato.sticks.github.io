@@ -1,76 +1,3 @@
-
-.masLeft {
-  float: left;
-  width: 49%;
-  margin-right: 2%;
-}
-
-.masRight {
-  float: right;
-  width: 49%;
-}
-
-.masImg {
-  width: 100%;
-  margin-bottom: 2%;
-}
-
-.masImg:hover {
-  cursor: pointer;
-}
-
-.overlaycc {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-}
-
-#overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-}
-
-#overlay2 {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-}
-
-
-
-.popImg {
-  height: 90vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 5vh;
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -280,7 +207,7 @@ p {
   }
 
   .indexImages {
-    width: 90%;
+    width: 100%;
     float: none;
   }
 
@@ -291,6 +218,80 @@ p {
 
 
 /*Index ENDS*/
+
+
+
+
+/*Index Mozaiqe Pictures*/
+.masLeft {
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+}
+
+.masRight {
+  float: right;
+  width: 49%;
+}
+
+.masImg {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.masImg:hover {
+  cursor: pointer;
+}
+
+.overlaycc {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.popImg {
+  height: 90vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vh;
+}
+
+/*Mobile Optimization*/
+@media screen and (max-width: 600px) {
+  .popImg {
+    width: 98%;
+    height: auto;
+    padding-top: 50%;
+  }
+}
+
+
+
+
+
 
 
 
